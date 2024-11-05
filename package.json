@@ -1,32 +1,33 @@
 {
-  "name": "minesweeper",
-  "description": "A recreation of the classic game minsweeper",
+  "name": "minesweeper-online",
+  "description": "Play classic Minesweeper online for free. Challenge yourself with this timeless puzzle game right in your browser. No download needed!",
   "version": "0.0.0",
   "private": "true",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear --host",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "deploy": "rollup -c && gh-pages -d public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MikhaD/minesweeper.git"
   },
   "keywords": [
-    "minesweeper",
-    "game"
+    "minesweeper online"
   ],
   "author": "MikhaD",
   "bugs": {
-    "url": "https://github.com/MikhaD/minesweeper/issues"
+    "url": "https://github.com/minesweeper-online-games/minesweeper-online-games.github.io/issues"
   },
-  "homepage": "https://github.com/MikhaD/minesweeper#readme",
+  "homepage": "https://minesweeper-online-games.github.io/",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
     "@rollup/plugin-typescript": "^8.3.0",
     "@tsconfig/svelte": "^3.0.0",
+    "gh-pages": "^6.2.0",
     "rollup": "^2.64.0",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.5",
